@@ -4,11 +4,13 @@ function make2DArray(cols, rows) {
   for (var i = 0; i < arr.length; i++) {
     arr[i] = new Array(rows);
   }
+  return arr;
 }
 
 var grid;
-var cols = 20;
-var rows = 20;
+var cols;
+var rows;
+var w = 20;
 
 function setup() {
   createCanvas(200, 200);
