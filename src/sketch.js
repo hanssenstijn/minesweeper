@@ -18,8 +18,14 @@ var rows = 20;
 function setup() {
   createCanvas(200, 200);
   grid = make2DArray(cols, rows);
+  for (var i = 0; i < cols; i++) {
+    for (var j = 0; j < rows; j++) {
+      grid[i][j] = new Cell();
+
+    }
 
 
+  }
 }
 
 function draw() {
