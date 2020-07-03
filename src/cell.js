@@ -7,6 +7,7 @@ function Cell(x, y, w) {
 }
 
 Cell.prototype.show = function () {
-
+  stroke(0);
+  fill(255);
   rect(this.x, this.y, this.w, this.w);
 }
